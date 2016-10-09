@@ -25,7 +25,10 @@ args = vars(ap.parse_args())
 
 # initialize the keypoint detector, local invariant descriptor, and the descriptor
 # pipeline
+'''Adapted for CV3 compliance
 detector = cv2.FeatureDetector_create("SURF")
+'''
+detector = cv2.xfeatures2d.SURF_create()
 descriptor = RootSIFT()
 dad = DetectAndDescribe(detector, descriptor)
 
