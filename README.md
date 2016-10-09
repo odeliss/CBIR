@@ -1,2 +1,2 @@
 # CBIR
-Building a imbae based search engine
+Building an image-based search engine
